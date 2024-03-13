@@ -17,7 +17,7 @@ pipeline {
     stage('Test') {
       steps {
         // Introduce an intentional error in the test stage
-        sh './nonexistent_script.sh'
+        sh './output.sh'
       }
     }
     stage('Deploy') {
